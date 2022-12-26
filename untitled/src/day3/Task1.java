@@ -6,12 +6,12 @@ public class Task1 {
         System.out.println("Enter city ");
 
         while(true) {
-            String x = s.nextLine();
+            String city = s.nextLine();
 
-            if (x.equals("stop"))
+            if (city.equals("stop"))
                 break;
 
-            switch(x) {
+            switch(city) {
                 case "London", "Milan", "Verona":
                     System.out.println("England");
                     break;
