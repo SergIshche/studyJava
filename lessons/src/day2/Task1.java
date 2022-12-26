@@ -1,7 +1,7 @@
 package day2;
 
 import java.util.Scanner;
-public class lesson_2_1 {
+public class Task1 {
     public static void main(String[] args){
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the quantity of floors ");
