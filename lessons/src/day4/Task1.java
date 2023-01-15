@@ -22,33 +22,33 @@ public class Task1 {
             if(x>8)
                 count8++;
         }
-        System.out.println(count8);
+        System.out.println("Count more than 8 = " + count8);
 
         int count1 = 0;
         for( int x:numbers) {
             if (x == 1)
                 count1++;
         }
-        System.out.println(count1);
+        System.out.println("Count 1 = " + count1);
 
         int countEven = 0;
         for( int x:numbers){
             if(numbers[x] % 2 == 0 && numbers[x] != 0)
                 countEven++;
         }
-        System.out.println(countEven);
+        System.out.println("Count of Even = " + countEven);
 
         int countOdd = 0;
         for( int x:numbers){
             if(numbers[x] % 2 != 0)
                 countOdd++;
         }
-        System.out.println(countOdd);
+        System.out.println("Count of Odd = " + countOdd);
 
         int sumOfArray = 0;
         for( int x:numbers){
                 sumOfArray += x ;
         }
-        System.out.println(sumOfArray);
+        System.out.println("Sum of array = " + sumOfArray);
     }
 }
