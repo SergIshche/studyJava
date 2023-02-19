@@ -31,5 +31,6 @@ public class Task4 {
         }
         System.out.println(maxSum);
         System.out.println(indx);
+        System.out.println(numbers[indx]);
     }
 }
