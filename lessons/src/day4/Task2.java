@@ -12,7 +12,7 @@ public class Task2 {
         int[] numbers = new int[numLength];
 
         for (int i = 0; i < numLength; i++)
-            numbers[i] = rand.nextInt(10000);
+            numbers[i] = rand.nextInt(1000);
 
         System.out.println(Arrays.toString(numbers));
         System.out.println(numbers.length);
@@ -25,7 +25,7 @@ public class Task2 {
         }
         System.out.println("The largest number of array = " + large);
 
-        int small = 10000;
+        int small = 1000;
         for (int element : numbers) {
             if (element < small)
                 small = element;
@@ -33,12 +33,25 @@ public class Task2 {
         System.out.println("The smallest number of array = " + small);
 
         int count = 0;
+
+
+        for (int element : numbers) {
+            if (element % 10 == 0 && element != 0)
+                count ++;
+                }
         int sum = 0;
         for (int element : numbers) {
             if (element % 10 == 0)
-                count ++;
                 sum += element;
         }
+        int[] kratne10 = new int[count];
+        int index = 0;
+        for (int element : numbers) {
+            if (element % 10 == 0 && element != 0)
+                kratne10[index++] = element;
+
+        }
+        System.out.println(Arrays.toString(kratne10));
         System.out.println("Number of array elements ending with 0 = " + count);
         System.out.println("Sum of array elements ending with 0 = " + sum);
     }
