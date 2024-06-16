@@ -2,17 +2,17 @@ package day7;
 
 public class Task2 {
     public static void main (String[] args) {
-        Player player1 = new Player(95);
-        Player player2 = new Player(97);
-        Player player3 = new Player(93);
-        Player player4 = new Player(100);
-        Player player5 = new Player(90);
+        Player player1 = new Player();
+        Player player2 = new Player();
+        Player player3 = new Player();
+        Player player4 = new Player();
+        Player player5 = new Player();
         Player.info();
-        Player player6 = new Player(100);
+        Player player6 = new Player();
 
         Player.info();
 
-        Player player7 = new Player(95);
+        Player player7 = new Player();
 
         Player.info();
         for (int i = 0; i < 100; i++)
@@ -22,7 +22,7 @@ public class Task2 {
 
         Player.info();
 
-        Player player8 = new Player(95);
+        Player player8 = new Player();
 
         Player.info();
 

@@ -1,5 +1,7 @@
 package day7;
 
+import java.util.Random;
+
 public class Player {
     private int stamina;
 
@@ -7,12 +9,14 @@ public class Player {
     private final static int MIN_STAMINA = 0;
     private static int countPlayers;
 
-    public Player(int stamina) {
-        this.stamina = stamina;
+    public Player() {
 
         if (countPlayers < 6) {
             countPlayers++;
         }
+
+        Random rand = new Random();
+        this.stamina = rand.nextInt(11) + 90;
     }
 
     public void run() {
