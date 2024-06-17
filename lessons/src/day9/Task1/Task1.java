@@ -5,14 +5,10 @@ public class Task1 {
         Student student = new Student("Jack", "415");
         Teacher teacher = new Teacher("Vasya", "English");
 
-        System.out.println(student.getGroupName());
-        System.out.println(teacher.getSubjectName());
 
         student.printinfo();
         teacher.printinfo();
 
-        System.out.println(student.getName());
-        System.out.println(teacher.getName());
     }
 
 }
