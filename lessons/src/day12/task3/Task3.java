@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Tsak3 {
+public class Task3 {
     public static void main(String[] args) {
         MusicBand ddt = new MusicBand("ddt", 1990);
         MusicBand rok = new MusicBand("rok", 1995);
