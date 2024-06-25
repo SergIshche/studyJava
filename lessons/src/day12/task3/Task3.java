@@ -1,4 +1,4 @@
-package day12.task3;
+/*package day12.task3;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,3 +42,5 @@ public class Task3 {
         }
 
 }
+
+ */
