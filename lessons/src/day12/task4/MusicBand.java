@@ -13,15 +13,15 @@ MusicBand ), выводящий список участников в консо�
 слияния.*/
 public class MusicBand {
     private String name;
-    private List<String> pib;
+    private List<String> members;
     private int year;
 
-    public List<String> getPib() {
-        return pib;
+    public List<String> getMembers() {
+        return members;
     }
 
-    public void setPib(List<String> pib) {
-        this.pib = pib;
+    public void setMembers(List<String> pib) {
+        this.members = members;
     }
 
     public String getName() {
@@ -40,28 +40,28 @@ public class MusicBand {
         this.year = year;
     }
 
-    public MusicBand(String name, int year, List<String> pib) {
+    public MusicBand(String name, int year, List<String> members) {
         this.name = name;
         this.year = year;
-        this.pib = pib;
+        this.members = members;
     }
 
     public static void transferMembers(MusicBand a, MusicBand b){
-        for (String pib: a.getPib()){
-            b.getPib().add(pib);
+        for (String members: a.getMembers()){
+            b.getMembers().add(members);
 
         }
-        a.getPib().clear();
+        a.getMembers().clear();
     }
 
     public void printMembers(){
-        System.out.println(this.pib);
+        System.out.println(this.members);
     }
     @Override
     public String toString() {
         return "MusicBand{" +
                 "name='" + name + '\'' +
-                ", pib='" + pib + '\'' +
+                ", pib='" + members + '\'' +
                 ", year=" + year +
                 '}';
     }
